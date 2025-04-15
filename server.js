@@ -51,6 +51,11 @@ app.post("/signup", async (req, res) => {
   }
 });
 
+
+app.get('/',(req, res)=>[
+    res.json({message: " This API is working .... "})
+])
+
 app.listen(port, () => {
   console.log(`This server is running on the http://localhost:${port}`);
 });
